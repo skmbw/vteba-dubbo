@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.vteba.batch.user.model.User;
 import com.vteba.batch.user.service.spi.UserService;
 import com.vteba.utils.id.IntIncrement;
-import com.vteba.utils.serialize.Kryoer;
+import com.vteba.utils.serialize.kryo.Kryoer;
 import com.vteba.web.action.GenericAction;
 import com.vteba.web.action.JsonBean;
 
