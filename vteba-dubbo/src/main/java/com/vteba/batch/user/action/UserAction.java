@@ -105,7 +105,12 @@ public class UserAction extends GenericAction<User> {
      */
     @RequestMapping("/add")
     public String add() {
-    	userServiceImpl.updateUser(IntIncrement.getAndInc());
+    	//userServiceImpl.updateUser(IntIncrement.getAndInc());
+    	User request = new User();
+    	request.setAge(23);
+    	request.setName("yinlei");
+    	User result = userServiceImpl.test(request);
+    	System.out.println(result);
         return "user/add";
     }
     
