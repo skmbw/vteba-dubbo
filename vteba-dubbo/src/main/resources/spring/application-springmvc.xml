@@ -31,7 +31,7 @@
     	</property>
     </bean>
     
-    <bean id="jsonStringDeserializer" class="com.vteba.web.servlet.converter.json.StringDeserializer"/>
+    <bean id="jsonStringDeserializer" class="com.vteba.web.servlet.converter.json.StringCodec"/>
     
     <!-- 以下 validator和ConversionService Bean，使用 mvc:annotation-driven配置时，自动注册-->
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
